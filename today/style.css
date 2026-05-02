@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #f0f6f0;
+    background-color: #222323;
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+
+}
+
+#wrapper {
+    background-color: #191a1a;
+    border-radius: 4px;
+}
+
+#list {
+    list-style: square inside;
+}

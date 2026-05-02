@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    --0: 240, 246, 240; /* white (text) */
+    --2: 44, 50, 55; /* light (body bg) */
+    --3: 37, 43, 48; /* medium (element bg) */
+    --4: 30, 36, 41; /* dark (border)*/
+    --purp: 90, 71, 128; /* purple (shadow/accent)*/
+}
+
+body {
+    overflow: hidden;
+    width: 400px;
+    height: 500px;
+
+    font-size: 1em;
+    line-height: 1em;
+
+    background-color: rgba(var(--2));
+    color: rgba(var(--0));
+
+	box-sizing: border-box;
+    border: 4px solid rgba(var(--4));
+    box-shadow: 0 0 10px 2px rgba(var(--4)) inset;
+}
+
+#text {
+    padding: 10px;
+    height: 20px;
+    width: 270px;
+
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+
+    font-size: 1.5em;
+    line-height: 1.5em;
+
+    background-color: rgba(var(--3));
+    color: rgba(var(--0));
+
+    border: 4px solid rgba(var(--4));
+    border-radius: 4px;
+
+    outline: none;
+}
+
+#button {
+    padding: 10px;
+    height: 20px;
+    width: 20px;
+
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+
+    background-color: rgba(var(--purp));
+
+    border: 4px solid rgba(var(--4));
+    border-radius: 400px;
+
+    user-select: none;
+
+    transition-duration: 100ms;
+    transition-delay: 10ms;
+}
+
+#button:hover {
+    background-color: rgba(var(--purp), .75);
+}
+
+#button:active {
+    background-color: rgba(var(--purp), .5);
+
+    transition-duration: 100ms;
+    transition-delay: 0ms;
+}
+
+#plus-image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#todo-list {
+    overflow-y: auto;
+    height: 400px;
+    margin: 10px;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: rgba(var(--3));
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(var(--purp));
+    border-radius: 10px;
+}
+
+.item {
+    padding: 8px;
+    margin: 5px;
+    width: fit-content;
+    cursor:not-allowed;
+    user-select: none;
+    border: 2px solid rgba(var(--4));
+    border-radius: 4px;;
+
+
+    display: block;
+}
+
+.item:hover {
+    color: red;
+}

@@ -1,0 +1,13 @@
+Colors: 
+
+White: #f0f6f0 || rgba(240, 246, 240, 1) || Text
+Black: #222323 || rgba(34, 35, 35, 1) || Main Background
+
+Darker: #191a1a || rgba(25, 26, 26, 1) || Border & other backgruond
+
+UPDATED ::
+
+White: #f0f6f0 || rgba(240, 246, 240, 1) || Text
+Black: #2c2d2d || rgba(44, 45, 45, 1) || Main Background
+
+Darker: #1e1f1f || rgba(30, 31, 31, 1) || Border & other backgruond
